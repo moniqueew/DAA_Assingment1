@@ -15,7 +15,7 @@ class MergeSortTest {
     @ValueSource(ints = {0, 1, 5, 16, 50, 200, 1000})
     void matchesArraysSortOnRandomArrays(int size) {
         Random rnd = new Random(size + 1);
-        for (int trial = 0; trial < 15; trial++) { // 7 sizes * 15 = 105 random arrays
+        for (int trial = 0; trial < 15; trial++) {
             int[] a = randomArray(size, rnd);
             int[] expected = a.clone();
             Arrays.sort(expected);
